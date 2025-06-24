@@ -1,5 +1,11 @@
 document.addEventListener('keypress', (event) => {
 	switch(event.key) {
+		case '1':
+			document.location.href = '/backstory/'
+			break;
+		case '2':
+			document.location.href = '/accolades/'
+			break;
 		case '3':
 			document.location.href = 'https://www.linkedin.com/in/nschneble/';
 			break;
