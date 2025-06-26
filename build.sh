@@ -24,9 +24,11 @@ cp mixbook.jpg public/mixbook.jpg
 cp opera.jpg public/opera.jpg
 cp prima.jpg public/prima.jpg
 cp robots.txt public/robots.txt
-cp shortcuts.js public/shortcuts.js
 cp sitemap.xml public/sitemap.xml
 cp topfloor.jpg public/topfloor.jpg
 
 mkdir public/css
 sass css/style.scss public/css/style.css
+
+mkdir public/js
+cp js/shortcuts.js public/js/shortcuts.js
