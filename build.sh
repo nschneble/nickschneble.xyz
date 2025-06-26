@@ -21,4 +21,4 @@ mkdir public/images
 cp images/* public/images
 
 mkdir public/js
-cp js/shortcuts.js public/js/shortcuts.js
+cp js/* public/js
