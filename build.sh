@@ -28,4 +28,5 @@ cp shortcuts.js public/shortcuts.js
 cp sitemap.xml public/sitemap.xml
 cp topfloor.jpg public/topfloor.jpg
 
-sass style.scss public/style.css
+mkdir public/css
+sass css/style.scss public/css/style.css
