@@ -13,11 +13,14 @@ cp html/backstory.html public/backstory/index.html
 cp html/index.html public/index.html
 cp html/stumble.html public/stumble/index.html
 
+# compile css
 mkdir public/css
 sass css/style.scss public/css/style.css
 
+# copy images and favicons
 mkdir public/images
 cp images/* public/images
 
+# copy javascript
 mkdir public/js
 cp js/* public/js
