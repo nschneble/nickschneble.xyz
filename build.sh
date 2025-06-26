@@ -2,7 +2,6 @@
 rm -rf public
 
 mkdir public
-cp links.json public/links.json
 cp robots.txt public/robots.txt
 cp sitemap.xml public/sitemap.xml
 
@@ -16,6 +15,10 @@ cp html/stumble.html public/stumble/index.html
 # compile css
 mkdir public/css
 sass css/style.scss public/css/style.css
+
+# copy data files
+mkdir public/data
+cp data/* public/data
 
 # copy images and favicons
 mkdir public/images

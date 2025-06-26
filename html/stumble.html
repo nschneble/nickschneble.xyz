@@ -11,7 +11,7 @@
 		<link rel="shortcut icon" href="/images/favicon.ico?v=1" />
 		<link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png?v=1" />
 		<script>
-			fetch("/links.json?v=1")
+			fetch("/data/links.json?v=1")
 				.then(response => response.json())
 				.then(data => window.location.replace(data[Math.floor(Math.random() * data.length)]));
 		</script>
