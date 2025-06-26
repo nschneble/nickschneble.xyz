@@ -1,14 +1,16 @@
-$lite-theme-color: #fefefe;
-$dark-theme-color: #34568a;
+// variables
+$lite-page-color: #fefefe;
+$dark-page-color: #34568a;
 $lite-link-color: #f5eebd;
 $dark-link-color: #6e0e69;
-$site-max-width: 650px;
+$max-width: 650px;
 
+// styles
 body {
   font: 18px/1.5 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  background: $lite-theme-color;
-  color: $dark-theme-color;
-  max-width: $site-max-width;
+  background: $lite-page-color;
+  color: $dark-page-color;
+  max-width: $max-width;
   margin: 40px auto;
   padding: 0 10px;
 }
@@ -30,6 +32,7 @@ a:visited:hover {
   text-decoration: underline;
 }
 
+// responsive images
 img {
   max-width: 100%;
   height: auto;
@@ -41,20 +44,29 @@ img {
   gap: 10px;
 }
 
-.flex-item {
-  flex: 0 0 calc(50% - 5px);
+// prefers a two-column flexible layout
+.flex-col-2 {
+  flex: 0 0 calc((100% - 10px) / 2);
 }
 
-@media (max-width: $site-max-width) {
-  .flex-item {
+// prefers a three-column flexible layout
+.flex-col-3 {
+  flex: 0 0 calc((100% - 20px) / 3);
+}
+
+// transforms to a single-column layout on mobile
+@media (max-width: $max-width) {
+  .flex-col-2,
+  .flex-col-3 {
     flex: 0 0 100%;
   }
 }
 
+// dark mode!
 @media (prefers-color-scheme: dark) {
   body {
-    background: $dark-theme-color;
-    color: $lite-theme-color;
+    background: $dark-page-color;
+    color: $lite-page-color;
   }
 
   a:link,
