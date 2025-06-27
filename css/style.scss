@@ -38,11 +38,20 @@ img {
   height: auto;
 }
 
+// app icons
+img.rounded {
+  border-radius: 20%;
+}
+
 // flexible layout
 .flex {
   display: flex;
   flex-wrap: wrap;
   gap: 10px;
+}
+
+.gap-2x {
+  gap: 20px;
 }
 
 // prefers a two-column flexible layout
@@ -55,7 +64,7 @@ img {
   flex: 0 0 calc((100% - 20px) / 3);
 }
 
-// prefers a four-column flexible layout
+// prefers a four-column flexible layout (with 2x gap)
 .flex-col-4 {
   flex: 0 0 calc((100% - 60px) / 4);
 }
