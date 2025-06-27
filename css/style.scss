@@ -54,11 +54,20 @@ img {
   flex: 0 0 calc((100% - 20px) / 3);
 }
 
-// transforms to a single-column layout on mobile
+// prefers a four-column flexible layout
+.flex-col-4 {
+  flex: 0 0 calc((100% - 60px) / 4);
+}
+
+// transforms to single and double-column layouts on mobile
 @media (max-width: $max-width) {
   .flex-col-2,
   .flex-col-3 {
     flex: 0 0 100%;
+  }
+
+  .flex-col-4 {
+    flex: 0 0 calc((100% - 20px) / 2);
   }
 }
 
