@@ -1,5 +1,8 @@
 document.addEventListener("keypress", (event) => {
 	switch(event.key) {
+		case "0":
+			document.location.href = "/secret/";
+			break;
 		case "1":
 			document.location.href = "/backstory/";
 			break;
