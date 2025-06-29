@@ -1,4 +1,4 @@
 User-Agent: *
 Disallow: /stumble$
 Allow: /
-Sitemap: https://nschneble.com/sitemap.xml
+Sitemap: https://nickschneble.xyz/sitemap.xml
