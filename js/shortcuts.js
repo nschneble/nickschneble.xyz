@@ -1,3 +1,5 @@
+/*global document */
+
 document.addEventListener("keypress", (event) => {
 	switch(event.key) {
 		case "0":
