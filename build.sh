@@ -2,6 +2,7 @@
 rm -rf public
 
 mkdir public
+cp .htaccess public/.htaccess
 cp robots.txt public/robots.txt
 cp sitemap.xml public/sitemap.xml
 
