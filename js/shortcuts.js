@@ -14,6 +14,9 @@ document.addEventListener("keypress", (event) => {
 		case "3":
 			document.location.href = "https://www.linkedin.com/in/nschneble/";
 			break;
+		case "4":
+			document.location.href = "https://fancyenchiladas.net/";
+			break;
 		case "5":
 			document.location.href = "/stumble/";
 			break;
